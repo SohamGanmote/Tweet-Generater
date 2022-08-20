@@ -51,7 +51,7 @@ btn.addEventListener("click", function() {
         h2.innerText = `${userName.value}`;
 
         const p = document.createElement("p");
-        const twitterName = userName.value.replace(" ", "_");
+        const twitterName = userName.value.replace(" ", "_").toLowerCase();
         p.innerText = `@${twitterName}`;
 
         const tweetText = document.createElement("div");
