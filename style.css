@@ -28,14 +28,13 @@ button {
     padding: 5px 25px;
     border-radius: 50px;
     background-color: #3AB4F2;
-    border: none;
+    border: 1px solid #3AB4F2;
     color: white;
     transition: 0.3s;
 }
 
 button:hover {
     font-weight: 900;
-    padding: 4px 24px;
     background-color: transparent;
     border: 1px solid #3AB4F2;
     color: #3AB4F2;
