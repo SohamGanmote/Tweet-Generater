@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #413F42;
+}
+
+#name,
+#tweet {
+    display: block;
+    margin: 20px;
+    width: 500px;
+    height: 20px;
+    background: transparent;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+button {
+    margin: 0px 20px;
+    height: 40px;
+    font-size: 20px;
+    padding: 5px 25px;
+    border-radius: 50px;
+    background-color: #3AB4F2;
+    border: none;
+    color: white;
+}
+
+.tweetBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 600px;
+    user-select: none;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+}
+
+.profilPicture {
+    background-color: #D9D7F1;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    margin: 20px 25px;
+}
+
+.profilPicture img {
+    object-fit: cover;
+    height: 65px;
+    width: 65px;
+}
+
+.profilUser {
+    margin: 20px 0px;
+}
+
+.tweetText {
+    margin: 5px 25px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.dateOfTweet {
+    margin: 5px 25px;
+    font-weight: 500;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.likesShares {
+    margin-top: 35px;
+}
+
+.likesShares span {
+    margin: 20px 25px;
+    font-weight: 900;
+    color: gray;
+}
+
+.likesShares span b {
+    color: black;
+}
+
+.opetions {
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.opetions img {
+    height: 30px;
+    width: 30px;
+}
