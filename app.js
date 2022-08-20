@@ -51,7 +51,8 @@ btn.addEventListener("click", function() {
         h2.innerText = `${userName.value}`;
 
         const p = document.createElement("p");
-        p.innerText = `@${userName.value}`;
+        const twitterName = userName.value.replace(" ", "_");
+        p.innerText = `@${twitterName}`;
 
         const tweetText = document.createElement("div");
         tweetText.classList.add("tweetText");
