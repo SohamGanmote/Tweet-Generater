@@ -21,6 +21,7 @@ body {
 }
 
 button {
+    box-sizing: border-box;
     margin: 0px 20px;
     height: 40px;
     font-size: 20px;
@@ -29,6 +30,15 @@ button {
     background-color: #3AB4F2;
     border: none;
     color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    font-weight: 900;
+    padding: 4px 24px;
+    background-color: transparent;
+    border: 1px solid #3AB4F2;
+    color: #3AB4F2;
 }
 
 .tweetBox {
