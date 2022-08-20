@@ -4,19 +4,24 @@ const btn = document.querySelector("#btn")
 
 const body = document.querySelector("body");
 
-const date = new Date();
-const time = new Date();
+function dateTime() {
+    const date = new Date();
+    const time = new Date();
 
-const formattedTime = time.toLocaleString("en-IN", {
-    hour: "numeric",
-    minute: "numeric",
-});
+    const formattedTime = time.toLocaleString("en-IN", {
+        hour: "numeric",
+        minute: "numeric",
+    });
 
-const formattedDate = date.toLocaleString("en-IN", {
-    day: "numeric",
-    month: "short",
-    year: "numeric"
-});
+    const formattedDate = date.toLocaleString("en-IN", {
+        day: "numeric",
+        month: "short",
+        year: "numeric"
+    });
+
+    const arry = [formattedTime, formattedDate];
+    return arry;
+}
 
 function randNum() {
     const num = Math.ceil(Math.random() * 898);
@@ -58,7 +63,8 @@ btn.addEventListener("click", function() {
         dateOfTweet.classList.add("dateOfTweet");
 
         const p3 = document.createElement("p");
-        p3.innerText = `${formattedTime} · ${formattedDate}`;
+        const datetime = dateTime();
+        p3.innerText = `${datetime[0]} · ${datetime[1]}`;
 
         const likesShares = document.createElement("div");
         likesShares.classList.add("likesShares");
