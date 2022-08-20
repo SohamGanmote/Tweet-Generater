@@ -29,6 +29,9 @@ function randNum() {
 }
 
 btn.addEventListener("click", function() {
+
+    const verified = document.querySelector(".isVerified").checked;
+
     console.log("Tweeted");
     if (userName.value && userTweet.value != "") {
 
@@ -107,6 +110,20 @@ btn.addEventListener("click", function() {
         profilPicture.append(img);
         profile.append(profilPicture);
         profile.append(profilUser);
+        if (verified === true) {
+
+            const verificationMark = document.createElement("div");
+            verificationMark.classList.add("verificationMark");
+
+            const vImg = document.createElement("img");
+            vImg.setAttribute("src", "https://img.icons8.com/color/344/verified-badge.png");
+
+            verificationMark.append(vImg);
+
+            console.log("Verified");
+
+            profile.append(verificationMark);
+        }
         tweetBox.append(profile);
         tweetText.append(p2)
         tweetBox.append(tweetText);

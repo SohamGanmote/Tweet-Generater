@@ -12,12 +12,24 @@ body {
 #tweet {
     display: block;
     margin: 20px;
-    width: 500px;
+    width: 250px;
     height: 20px;
     background: transparent;
     color: white;
     padding: 5px 10px;
-    border: 1px solid black;
+}
+
+.verify {
+    color: white;
+    font-size: 15px;
+    margin: 20px;
+}
+
+.isVerified {
+    position: absolute;
+    left: 180px;
+    height: 25px;
+    width: 25px;
 }
 
 button {
@@ -72,6 +84,15 @@ button:hover {
 
 .profilUser {
     margin: 20px 0px;
+}
+
+.verificationMark {
+    padding-top: 25px;
+    padding-left: 3px;
+}
+
+.verificationMark img {
+    width: 25px;
 }
 
 .tweetText {
