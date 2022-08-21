@@ -30,7 +30,7 @@ function randNum() {
 
 btn.addEventListener("click", function() {
 
-    const verified = document.querySelector(".isVerified").checked;
+    const verified = document.querySelector(".isVerified");
 
     console.log("Tweeted");
     if (userName.value && userTweet.value != "") {
@@ -110,7 +110,7 @@ btn.addEventListener("click", function() {
         profilPicture.append(img);
         profile.append(profilPicture);
         profile.append(profilUser);
-        if (verified === true) {
+        if (verified.checked === true) {
 
             const verificationMark = document.createElement("div");
             verificationMark.classList.add("verificationMark");
@@ -134,6 +134,8 @@ btn.addEventListener("click", function() {
 
         userName.value = "";
         userTweet.value = "";
+        verified.checked = false;
+
     } else {
         console.log("Enter UserName And Tweet");
     }
